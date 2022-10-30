@@ -19,7 +19,11 @@ RSpec.describe Boat do
   it 'boat can be rented by the hour' do 
     kayak = Boat.new(:kayak, 20) 
 
-    
+   kayak.add_hour
+   kayak.add_hour
+   kayak.add_hour
+
+    expect(kayak.hours_rented).to eq(3)
   end
 end
   
