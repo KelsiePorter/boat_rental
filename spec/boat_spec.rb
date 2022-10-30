@@ -1,6 +1,5 @@
 require 'pry'
 require './lib/boat'
-require './lib/renter'
 
 RSpec.describe Boat do
   it 'boat has a type and a price_per_hour' do 
